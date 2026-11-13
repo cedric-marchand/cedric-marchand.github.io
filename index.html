@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="generator" content="Hugo 0.122.0"><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+  <link rel="icon" href=kamon.png type="image/gif">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="css/font.css" media="all">
+  <script type=application/javascript>
+    var doNotTrack = !1;
+    doNotTrack || (window.ga = window.ga || function() {
+        (ga.q = ga.q || []).push(arguments)
+    }
+    ,
+    ga.l = +new Date,
+    ga("create", "UA-156431626-1", "auto"),
+    ga("send", "pageview"))
+  </script>
+  <script async src=https://www.google-analytics.com/analytics.js></script>
+  <meta property="og:title" content="Cédric Marchand" />
+  <meta property="og:description" content="This is my personal website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cédric Marchand" />
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Cédric Marchand"/>
+  <meta name="twitter:description" content="This is my personal website"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/header.css" media="all">
+  <link rel="stylesheet" href="css/footer.css" media="all">
+  <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css>
+  <link rel="stylesheet" href="css/theme.css" media="all">
+  <style>
+      :root {
+          --text-color: #343a40;
+          --text-secondary-color: #6c757d;
+          --background-color: #eaedf0;
+          --secondary-background-color: #64ffda1a;
+          --primary-color: #800000;
+          --secondary-color: #f8f9fa;
+  
+           
+          --text-color-dark: #e4e6eb;
+          --text-secondary-color-dark: #b0b3b8;
+          --background-color-dark: #18191a;
+          --secondary-background-color-dark: #212529;
+          --primary-color-dark: #ffffff;
+          --secondary-color-dark: #212529;
+      }
+      body {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          text-align: left;
+      }
+  </style>
+  <meta name="description" content=This&#32;is&#32;my&#32;personal&#32;website>
+  <link rel="stylesheet" href="css/index.css" media="all">
+  <link rel="stylesheet" href="css/projects.css" media="all">
+  <script defer src="fontawesome-6/all-6.4.2.js"></script>
+  <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js></script>
+  <title>Cédric Marchand</title>
+  <style>
+    /* Hero: no full-screen height, so About Me follows the photo directly */
+    #hero { min-height: auto !important; padding-bottom: 1rem !important; }
+    #about { padding-top: 1.5rem !important; }
+    #about h3 + .row { padding-top: 1.5rem !important; padding-bottom: 1rem !important; }
+    /* Supervision, teaching, events and Other page: same look as the project cards */
+    .xs .container > h3 { color: var(--text-secondary-color) !important; }
+    .xs-intro { max-width: 46rem; margin: 0.5rem auto 2rem; text-align: center; color: var(--text-secondary-color); }
+    .xs-subtitle { font-size: 1.15rem; margin: 2.2rem 0 1rem; color: var(--text-color); }
+    .xs-card { height: 100%; background-color: var(--secondary-color); border-radius: 1rem; box-shadow: 0 0 36px rgba(0,0,0,0.08); padding: 1.1rem 1.25rem; }
+    .xs-card * { background-color: transparent !important; }
+    .xs-card h5 { margin: 0 0 0.35rem; color: var(--text-color) !important; }
+    .xs-when { float: right; margin-left: 1rem; font-size: 0.85rem; color: var(--text-secondary-color); }
+    .xs-title { margin: 0 0 0.35rem; color: var(--text-color); }
+    .xs-meta { margin: 0; font-size: 0.9rem; color: var(--text-secondary-color); }
+    .xs-table-wrap { overflow-x: auto; }
+    .xs-table { width: 100%; border-collapse: collapse; color: var(--text-color); }
+    .xs-table th { font-weight: 600; font-size: 0.9rem; color: var(--text-secondary-color); text-align: left; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--text-secondary-color); white-space: nowrap; }
+    .xs-table td { padding: 0.55rem 0.6rem; border-bottom: 1px solid rgba(108,117,125,0.25); vertical-align: top; }
+    .xs-table td:nth-child(n+3), .xs-table th:nth-child(n+3) { text-align: center; }
+    .xs-table td:nth-child(2) { white-space: nowrap; color: var(--text-secondary-color); }
+    .xs-badge { display: inline-block; font-size: 0.72rem; padding: 0.1rem 0.45rem; border-radius: 0.4rem; border: 1px solid var(--primary-color); color: var(--primary-color); margin-left: 0.3rem; white-space: nowrap; }
+    .xs-note { font-size: 0.8rem; color: var(--text-secondary-color); white-space: nowrap; }
+    .xs-table details summary { cursor: pointer; }
+    .xs-table details summary:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; border-radius: 0.3rem; }
+    .xs-table details p { margin: 0.4rem 0 0.2rem; font-size: 0.9rem; color: var(--text-secondary-color); max-width: 60ch; }
+    .xs-card h5 { font-size: 1.1rem; }
+    .xs-title { font-size: 0.97rem; }
+    .xs-courses details { background-color: var(--secondary-color); border-radius: 0.75rem; margin-bottom: 0.5rem; padding: 0.7rem 1rem; }
+    .xs-courses summary { cursor: pointer; color: var(--text-color); font-weight: 500; }
+    .xs-courses summary:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; border-radius: 0.3rem; }
+    .xs-courses details p { margin: 0.5rem 0 0.1rem; color: var(--text-secondary-color); max-width: 70ch; }
+    .xs-events { display: grid; grid-template-columns: 5rem 1fr; gap: 0 1.5rem; max-width: 52rem; margin: 0 auto; }
+    .xs-year { font-size: 1.4rem; font-weight: 600; color: var(--primary-color); padding-top: 0.6rem; border-top: 2px solid var(--primary-color); }
+    .xs-events ul { list-style: none; margin: 0 0 1.5rem; padding: 0.6rem 0 0; border-top: 1px solid rgba(108,117,125,0.35); }
+    .xs-events li { margin-bottom: 0.9rem; }
+    .xs-events li strong { display: block; font-weight: 600; color: var(--text-color); }
+    .xs-events li span { font-size: 0.9rem; color: var(--text-secondary-color); }
+    @media (max-width: 575px) { .xs-events { grid-template-columns: 1fr; } .xs-events ul { border-top: 0; padding-top: 0.3rem; } }
+    /* Past projects: same logo box as LEGO (248x133) whatever the logo shape */
+    #achievements .card-img-top {
+      aspect-ratio: 248 / 133;
+      object-fit: contain;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body class="light" onload=loading()>
+  <script src=bootstrap-5/js/bootstrap.bundle.js></script>
+  <script>
+    localStorage.getItem("pref-theme") === "dark" ? document.body.classList.add("dark") : localStorage.getItem("pref-theme") === "light" ? document.body.classList.remove("dark") : window.matchMedia("(prefers-color-scheme: dark)").matches && document.body.classList.add("dark")
+  </script>
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        profileHeaderElem.classList.add("showHeaderOnTop");
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+  <header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg">
+      <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+        <a class="navbar-brand primary-font text-wrap" href="./">
+          <img src="kamon.png" width="30" height="30" class="d-inline-block align-top"> Cédric Marchand
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+            <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#about" aria-label="about">About Me</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#timeline" aria-label="timeline">Timeline</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#experience" aria-label="experience">Experience</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#education" aria-label="education">Education</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#projects" aria-label="projects">Research projects</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#supervision" aria-label="supervision">Supervision</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#teaching" aria-label="teaching">Teaching</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#events" aria-label="events">Events</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="#contact" aria-label="contact">Contact</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="publi/publication/" title="Publications">Publications</a>
+            </li>
+            <li class="nav-item navbar-text">
+              <a class="nav-link" href="Other/index_other.html" title="Climbing">Climbing</a>
+            </li>
+            <li class="nav-item navbar-text">       
+              <div class="text-center">
+                <button id="theme-toggle">
+                  <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                  <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    
+                </span>
+                <h2>
+                    Cédric Marchand
+                </h2>
+                <h3>
+                    Associate Professor
+                </h3>
+                <p class="hero-content">
+                    &quot;Maitre de conférences classe normale&quot; (MCF CN)<br>
+Ecole centrale of Lyon <a href="https://www.ec-lyon.fr/"><sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a>, Institute of Nanotechnologies of Lyon <a href="https://inl.cnrs.fr/"><sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a>, Electronic group<br>
+<b>Keywords:</b> Emerging technologies, Hardware security, Computing architectures<br>
+<a target="_blank" href="https://www.ec-lyon.fr/"><img style="max-width: 350px; max-height: 100px" src="images/logos/logo_ecl.png"></a>
+<a target="_blank" href="https://inl.cnrs.fr/"><img style="max-width: 350px; max-height: 100px" src="images/logos/logo_INL.png"></a>
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="#" class="btn" download
+			  
+                          target="_blank"
+                          >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=35318184100" target="_blank" class="btn social-icon">
+            <i class="ai ai-scopus"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://scholar.google.com/citations?user=hgOfqr0AAAAJ&amp;hl=en&amp;oi=ao" target="_blank" class="btn social-icon">
+            <i class="ai ai-google-scholar"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.researchgate.net/profile/Cedric-Marchand-3" target="_blank" class="btn social-icon">
+            <i class="ai ai-researchgate"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://orcid.org/0000-0002-2546-6662" target="_blank" class="btn social-icon">
+            <i class="ai ai-orcid"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/c%C3%A9dric-marchand-27512359/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="images/profil_img.png"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                <p>I am Associate Professor at &ldquo;École Centrale de Lyon&rdquo; and member of the electronic team of the Lyon Institute of Nanotechnology (UMR CNRS 5270) since 2017 and IEEE member since 2018.</p>
+<p>I receive my engineering degree in Micro-Electronics and Applications from &ldquo;École Nationale Supérieur des Mines de Saint-Étienne (Campus Gardanne, ISMIN)&rdquo; in 2013.</p>
+<p>I receive my Ph.D. from the University of Lyon in 2016, for a work entitled &ldquo;Salutary hardware design to fight against counterfeiting and theft of integrated circuits&rdquo;, which was supported by the ANR JcJc project SALWARE (number ANR-13-JS03-0003). I have been rewarded for this work by the PhD prize of excellence of the Jean-Monnet University foundation.</p>
+
+
+                
+                Today, my research interests focus on the study of the Hardware Security impact of heterogeneous systems that include emerging technologies in the context of the Internet of Things:
+                <ul>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="timeline" class="py-5">
+<style>
+  #timeline {
+    --tl-career: #800000;
+    --tl-resp: #2c6e72;
+    --tl-lead: #9a640f;
+    --tl-event: #5d4e9c;
+    --tl-on-bar: #ffffff;
+    --tl-grid: rgba(52, 58, 64, 0.12);
+    --tl-surface: var(--secondary-color);
+  }
+  .dark #timeline {
+    --tl-career: #e48c8c;
+    --tl-resp: #7cc3c5;
+    --tl-lead: #e6b65e;
+    --tl-event: #b9aef0;
+    --tl-on-bar: #18191a;
+    --tl-grid: rgba(228, 230, 235, 0.14);
+  }
+  #timeline h3 { color: var(--text-secondary-color) !important; }
+  #timeline .tl-intro { max-width: 46rem; margin: 0.5rem auto 1.5rem; text-align: center; color: var(--text-secondary-color); }
+
+  #timeline .tl-toolbar { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+  #timeline .tl-group { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+  #timeline .tl-btn {
+    font: inherit; font-size: 0.85rem; line-height: 1; padding: 0.45rem 0.7rem; border-radius: 0.5rem;
+    border: 1px solid var(--tl-grid); background: var(--tl-surface); color: var(--text-color); cursor: pointer;
+  }
+  #timeline .tl-btn:hover { border-color: var(--text-secondary-color); }
+  #timeline .tl-btn[aria-pressed="true"] { border-color: var(--text-color); font-weight: 600; }
+  #timeline .tl-btn:focus-visible, #timeline .tl-viewport:focus-visible, #timeline .tl-item:focus-visible, #timeline .tl-mini:focus-visible {
+    outline: 2px solid var(--tl-career); outline-offset: 2px;
+  }
+  #timeline .tl-icon { min-width: 2.1rem; font-weight: 600; }
+  #timeline .tl-legend .tl-btn::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 0.2rem; margin-right: 0.4rem; vertical-align: -0.05rem; background: var(--c); }
+  #timeline .tl-legend .tl-btn[aria-pressed="false"] { opacity: 0.45; }
+  #timeline .tl-legend .tl-btn[aria-pressed="false"]::before { background: transparent; box-shadow: inset 0 0 0 2px var(--c); }
+
+  #timeline .tl-frame { background: var(--tl-surface); border-radius: 1rem; box-shadow: 0 0 36px rgba(0,0,0,0.08); padding: 0.75rem 0 0.5rem; }
+  #timeline .tl-grid { position: absolute; inset: 0; pointer-events: none; }
+  #timeline .tl-viewport { position: relative; overflow: hidden; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+  #timeline .tl-viewport.is-dragging { cursor: grabbing; }
+  #timeline .tl-lane-block { position: relative; }
+  #timeline .tl-side-label { position: absolute; left: 0.75rem; top: 0.1rem; font-size: 0.75rem; color: var(--text-secondary-color); z-index: 2; pointer-events: none; }
+  #timeline .tl-axis { position: relative; height: 2.1rem; border-top: 1px solid var(--text-secondary-color); border-bottom: 1px solid var(--tl-grid); }
+  #timeline .tl-tick { position: absolute; top: 0; height: 100%; border-left: 1px solid var(--tl-grid); font-size: 0.75rem; color: var(--text-secondary-color); padding: 0.45rem 0 0 0.3rem; white-space: nowrap; }
+  #timeline .tl-tick.is-minor { height: 0.4rem; }
+  #timeline .tl-gridline { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--tl-grid); pointer-events: none; }
+  #timeline .tl-today { position: absolute; top: 0; bottom: 0; border-left: 2px dashed var(--text-color); opacity: 0.55; pointer-events: none; z-index: 1; }
+  #timeline .tl-today span { position: absolute; top: 0.15rem; left: 0.3rem; font-size: 0.72rem; color: var(--text-color); white-space: nowrap; }
+
+  #timeline .tl-item {
+    position: absolute; height: 1.5rem; border-radius: 0.45rem; background: var(--c); color: var(--tl-on-bar);
+    font-size: 0.78rem; line-height: 1.5rem; padding: 0 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    border: 0; text-align: left; cursor: pointer; font-family: inherit;
+  }
+  #timeline .tl-item.is-ongoing { border-top-right-radius: 0; border-bottom-right-radius: 0; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 1.25rem), rgba(0,0,0,0.35)); mask-image: linear-gradient(90deg, #000 calc(100% - 1.25rem), rgba(0,0,0,0.35)); }
+  #timeline .tl-item.is-planned { background: transparent; color: var(--c); box-shadow: inset 0 0 0 2px var(--c); background-image: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--c) 18%, transparent) 6px 12px); }
+  #timeline .tl-item.is-milestone { background: transparent; color: var(--text-color); overflow: visible; padding-left: 1.15rem; width: auto !important; }
+  #timeline .tl-item.is-milestone::before { content: ""; position: absolute; left: 0.1rem; top: 0.35rem; width: 0.8rem; height: 0.8rem; background: var(--c); transform: rotate(45deg); border-radius: 0.1rem; }
+  #timeline .tl-item.is-dot { width: 1rem !important; padding: 0 !important; font-size: 0; }
+  #timeline .tl-item.is-dot::before { left: 0.1rem; }
+  #timeline .tl-viewport.is-compact .tl-item.is-milestone { font-size: 0; padding-right: 0; }
+  #timeline .tl-item.is-selected { outline: 2px solid var(--text-color); outline-offset: 1px; }
+
+  #timeline .tl-mini { position: relative; height: 3.6rem; margin: 0.6rem 0.75rem 0; border-radius: 0.5rem; background: var(--background-color); cursor: pointer; touch-action: none; }
+  #timeline .tl-mini-bar { position: absolute; height: 3px; border-radius: 2px; background: var(--c); opacity: 0.85; }
+  #timeline .tl-mini-year { position: absolute; bottom: 0.1rem; font-size: 0.62rem; color: var(--text-secondary-color); transform: translateX(-50%); pointer-events: none; }
+  @media (max-width: 575px) { #timeline .tl-mini-year.is-odd { display: none; } }
+  #timeline .tl-window { position: absolute; top: 0; bottom: 0; border: 2px solid var(--text-color); border-radius: 0.45rem; background: color-mix(in srgb, var(--text-color) 8%, transparent); cursor: grab; }
+  #timeline .tl-handle { position: absolute; top: 0; bottom: 0; width: 0.7rem; cursor: ew-resize; }
+  #timeline .tl-handle.is-left { left: -0.35rem; } #timeline .tl-handle.is-right { right: -0.35rem; }
+  #timeline .tl-hint { font-size: 0.75rem; color: var(--text-secondary-color); margin: 0.4rem 0.75rem 0; }
+
+  #timeline .tl-detail { margin-top: 1rem; min-height: 6.5rem; background: var(--tl-surface); border-radius: 1rem; padding: 1rem 1.25rem; border-left: 5px solid var(--c, var(--tl-grid)); }
+  #timeline .tl-detail h5 { margin: 0 0 0.15rem; color: var(--text-color) !important; }
+  #timeline .tl-detail .tl-when { float: right; font-size: 0.85rem; color: var(--text-secondary-color); margin-left: 1rem; }
+  #timeline .tl-detail .tl-org { font-size: 0.95rem; color: var(--text-secondary-color); margin-bottom: 0.4rem; }
+  #timeline .tl-detail p { margin: 0; max-width: 70ch; color: var(--text-color); }
+  #timeline .tl-detail a { color: inherit; }
+  #timeline .tl-empty { color: var(--text-secondary-color); margin: 0; }
+  #timeline .tl-toggle { margin-top: 0.4rem; }
+  #timeline #tl-body[hidden] { display: none; }
+  #timeline.is-collapsed { padding-bottom: 1rem !important; }
+  @media (prefers-reduced-motion: reduce) { #timeline * { transition: none !important; } }
+</style>
+
+  <div class="container">
+    <h3 class="text-center">Timeline</h3>
+    <div class="text-center"><button type="button" class="tl-btn tl-toggle" aria-expanded="true" aria-controls="tl-body">Hide timeline</button></div>
+    <div id="tl-body">
+    <p class="tl-intro">My career path, the responsibilities I have held and the events I have organised. Select an item to read more.</p>
+
+    <div class="tl-toolbar">
+      <div class="tl-group tl-legend" role="group" aria-label="Show or hide categories">
+        <button type="button" class="tl-btn" data-cat="career" aria-pressed="true" style="--c: var(--tl-career)">Career</button>
+        <button type="button" class="tl-btn" data-cat="resp" aria-pressed="true" style="--c: var(--tl-resp)">Responsibilities</button>
+        <button type="button" class="tl-btn" data-cat="lead" aria-pressed="true" style="--c: var(--tl-lead)">Project leadership</button>
+        <button type="button" class="tl-btn" data-cat="event" aria-pressed="true" style="--c: var(--tl-event)">Organised events</button>
+      </div>
+      <div class="tl-group" role="group" aria-label="Choose a period">
+        <button type="button" class="tl-btn" data-range="all">Overview</button>
+        <button type="button" class="tl-btn" data-range="2008,2018">Studies and PhD</button>
+        <button type="button" class="tl-btn" data-range="2017,2032">At Centrale Lyon</button>
+        <button type="button" class="tl-btn" data-range="now">Recent years</button>
+      </div>
+      <div class="tl-group" role="group" aria-label="Zoom and move">
+        <button type="button" class="tl-btn tl-icon" data-act="left" aria-label="Move earlier">&#8249;</button>
+        <button type="button" class="tl-btn tl-icon" data-act="out" aria-label="Zoom out">&minus;</button>
+        <button type="button" class="tl-btn tl-icon" data-act="in" aria-label="Zoom in">+</button>
+        <button type="button" class="tl-btn tl-icon" data-act="right" aria-label="Move later">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="tl-frame">
+      <div class="tl-viewport" tabindex="0" aria-label="Timeline. Use the arrow keys to move, plus and minus to zoom.">
+        <div class="tl-grid"></div>
+        <div class="tl-lane-block tl-top"><span class="tl-side-label">Career</span></div>
+        <div class="tl-axis"></div>
+        <div class="tl-lane-block tl-events"><span class="tl-side-label">Organised events</span></div>
+        <div class="tl-lane-block tl-bottom"><span class="tl-side-label">Responsibilities and project leadership</span></div>
+        <div class="tl-today"><span>Today</span></div>
+      </div>
+      <div class="tl-mini" tabindex="0" aria-label="Overview of the whole timeline. Drag the frame to choose the period shown above.">
+        <div class="tl-window"><div class="tl-handle is-left"></div><div class="tl-handle is-right"></div></div>
+      </div>
+      <p class="tl-hint">Drag the timeline or the frame in the overview to move. Zoom with the buttons, Ctrl + mouse wheel, or a pinch on touch screens.</p>
+    </div>
+
+    <div class="tl-detail" aria-live="polite">
+      <p class="tl-empty">Select an item in the timeline to see its details.</p>
+    </div>
+    </div>
+  </div>
+
+<script>
+(function () {
+  // Dates are decimal years (2017.67 = September 2017). end: null = still ongoing.
+  var ITEMS = [
+    { cat: "career", type: "point", start: 2008.5, title: "Baccalauréat, scientific track", short: "Baccalauréat", org: "Lycée Jean-Monnet, Franconville, France", when: "2008" },
+    { cat: "career", type: "point", start: 2013.5, title: "Engineering degree in Microelectronics and Applications", short: "Engineering degree", org: "École des Mines de Saint-Étienne, Gardanne, France", when: "2013" },
+    { cat: "career", start: 2013.75, end: 2016.9, title: "PhD candidate", org: "Laboratoire Hubert Curien, Université de Lyon, Saint-Étienne, France", when: "2013 – 2016",
+      text: "Thesis “Design of trustworthy hardware to fight against the theft and counterfeiting of integrated circuits”, supervised by Prof. Lilian Bossuet." },
+    { cat: "career", type: "point", start: 2016.9, title: "PhD in Electronics", org: "Laboratoire Hubert Curien, Université de Lyon, Saint-Étienne, France", when: "2016" },
+    { cat: "career", start: 2016.9, end: 2017.67, title: "Postdoctoral researcher", org: "Laboratoire Hubert Curien, Université de Lyon, Saint-Étienne, France", when: "2016 – 2017",
+      text: "Hardware security assessment of the ARM TrustZone extension in Zynq-type heterogeneous systems-on-chip combining an FPGA and processors." },
+    { cat: "career", start: 2017.67, end: null, title: "Associate Professor (Maître de conférences)", org: "École Centrale de Lyon, Électronique team of the Institut des Nanotechnologies de Lyon (INL)", when: "Since 2017",
+      text: "Research on the impact of emerging technologies on the hardware security of computing architectures, and teaching across the three years of the engineering programme." },
+
+    { cat: "resp", start: 2019, end: null, title: "Editor of the INL Electronics team website", org: "Institut des Nanotechnologies de Lyon", when: "Since 2019" },
+    { cat: "resp", start: 2021, end: 2025, title: "Co-lead of the “Hardware systems security” working group", org: "GDR Sécurité Informatique (GDR SI)", when: "2021 – 2024",
+      text: "Co-lead and coordinator of the national working group, including the organisation of thematic days on hardware security." },
+    { cat: "resp", start: 2023, end: null, title: "Co-lead of the “Reliable, robust and secure systems” track", org: "GDR SoC2", when: "Since 2023" },
+    { cat: "resp", start: 2023, end: null, title: "Board member of the EEA teaching department", org: "École Centrale de Lyon", when: "Since 2023" },
+    { cat: "resp", start: 2024, end: 2027, title: "Topic chair, secure architecture and applications", org: "DATE conference", when: "2024 – 2026",
+      text: "Co-chair of topic A5 in 2024, then chair of topic A3 in 2025 and 2026." },
+    { cat: "resp", start: 2024, end: null, title: "Co-lead of the RUST group", org: "Reliable, Ultra energy-efficient and Secure compuTing, INL Electronics team", when: "Since 2024" },
+    { cat: "resp", start: 2025, end: null, title: "Treasurer of the France IEEE CEDA chapter", org: "IEEE Council on Electronic Design Automation", when: "Since 2025" },
+
+    { cat: "lead", start: 2019, end: 2020, title: "BQR project coordinator", org: "École Centrale de Lyon", when: "2019",
+      text: "Internal project assessing the security of commercial sensor nodes, which started the side-channel attack test bench of the laboratory." },
+    { cat: "lead", start: 2020, end: 2021, title: "BQRi project coordinator", org: "Institut des Nanotechnologies de Lyon", when: "2020",
+      text: "Internal project on the hardware emulation of ferroelectric transistors on FPGA." },
+    { cat: "lead", start: 2021, end: 2025.83, title: "Coordinator of the ANR JCJC project SECRET", org: "Agence Nationale de la Recherche", when: "2021 – 2025", url: "https://inl.cnrs.fr/projects/secret/",
+      text: "Low-power operators dedicated to cryptographic computations, integrated in the compute units of RISC-V processors to secure sensor nodes." },
+    { cat: "lead", start: 2023, end: 2028, title: "INL administrative lead, Ferro4EdgeAI", org: "Horizon Europe project", when: "2023 – 2027", url: "https://www.ferro4edgeai.eu/" },
+    { cat: "lead", start: 2025, end: 2029, title: "INL scientific leader and work package leader, MultiSPIN", org: "PEPR SPIN", when: "2025 – 2028", url: "https://www.pepr-spin.fr/projet/multispin-2/" },
+    { cat: "lead", start: 2027, end: 2032, title: "Coordinator of the ANR project PACMAN", org: "Agence Nationale de la Recherche", when: "2027 – 2031",
+      text: "Post-quantum cryptography implemented with emerging non-volatile memory technologies, with INL, TIMA, LIRMM and CEA-List." },
+
+    // Organised events: only the year is known, so events of the same year are spread over it.
+    { cat: "event", type: "point", start: 2021.2, title: "Thematic day: Emerging technologies and security applications", org: "National thematic day", when: "2021" },
+    { cat: "event", type: "point", start: 2021.5, title: "Trusted Execution Environment (TEE) security days", org: "National event", when: "2021" },
+    { cat: "event", type: "point", start: 2021.8, title: "Thematic day: Post-quantum cryptography algorithms and hardware security", org: "National thematic day", when: "2021" },
+    { cat: "event", type: "point", start: 2022.5, title: "Thematic day: Hardware security and in-memory computing architectures", org: "National thematic day", when: "2022" },
+    { cat: "event", type: "point", start: 2023.2, title: "Thematic day: High-performance computing for embedded systems", org: "GDR SoC2, at IRT Saint Exupéry", when: "2023" },
+    { cat: "event", type: "point", start: 2023.5, title: "X-GDR BarCamp: Challenges of implementing AI", org: "Security, reliability, sustainability and new technologies", when: "2023" },
+    { cat: "event", type: "point", start: 2023.8, title: "Special session: Advances and challenges of ferroelectric devices for memory and computing", org: "IFIP/IEEE VLSI-SoC conference", when: "2023" },
+    { cat: "event", type: "point", start: 2025.5, title: "Thematic day: Connected objects, security and forensics", org: "GDR SoC2 and GDR SI", when: "2025" }
+  ];
+
+  var MIN = 2008, MAX = 2032.5, MIN_SPAN = 1.5;
+  var now = new Date();
+  var TODAY = now.getFullYear() + (now.getMonth() + now.getDate() / 31) / 12;
+  var LANE_H = 1.8; // rem
+  var root = document.getElementById("timeline");
+  var vp = root.querySelector(".tl-viewport");
+  var top = root.querySelector(".tl-top"), bottom = root.querySelector(".tl-bottom");
+  var axis = root.querySelector(".tl-axis"), grid = root.querySelector(".tl-grid");
+  var todayEl = root.querySelector(".tl-today");
+  var mini = root.querySelector(".tl-mini"), win = root.querySelector(".tl-window");
+  var detail = root.querySelector(".tl-detail");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var hidden = {};
+  var view = { s: MIN, e: MAX };
+  var COLORS = { career: "var(--tl-career)", resp: "var(--tl-resp)", lead: "var(--tl-lead)", event: "var(--tl-event)" };
+  var eventsRow = root.querySelector(".tl-events");
+
+  ITEMS.forEach(function (it) {
+    it.endEff = it.type === "point" ? it.start : (it.end === null ? TODAY : it.end);
+    it.ongoing = it.end === null;
+    it.planned = it.type !== "point" && it.start > TODAY;
+  });
+
+  // Lanes are fixed once for the whole range so items never jump while zooming.
+  function assignLanes(list) {
+    var lanes = [];
+    list.slice().sort(function (a, b) { return a.start - b.start; }).forEach(function (it) {
+      var reach = it.type === "point" ? it.start + 3 : it.endEff;
+      for (var i = 0; i < lanes.length; i++) if (lanes[i] <= it.start - 0.05) break;
+      lanes[i] = reach; it.lane = i;
+    });
+    return lanes.length;
+  }
+  var topCount = assignLanes(ITEMS.filter(function (i) { return i.cat === "career"; }));
+  var bottomCount = assignLanes(ITEMS.filter(function (i) { return i.cat === "resp" || i.cat === "lead"; }));
+  ITEMS.forEach(function (i) { if (i.cat === "event") i.lane = 0; });
+  eventsRow.style.height = (LANE_H + 1.4) + "rem";
+  top.style.height = (topCount * LANE_H + 1.4) + "rem";
+  bottom.style.height = (bottomCount * LANE_H + 1.4) + "rem";
+
+  ITEMS.forEach(function (it, idx) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "tl-item" + (it.type === "point" ? " is-milestone" : "") + (it.cat === "event" ? " is-dot" : "") + (it.ongoing ? " is-ongoing" : "") + (it.planned ? " is-planned" : "");
+    b.style.setProperty("--c", COLORS[it.cat]);
+    b.style.top = (1.25 + it.lane * LANE_H) + "rem";
+    b.textContent = it.short || it.title;
+    b.title = it.title + " (" + it.when + ")";
+    b.addEventListener("click", function () { if (!moved) select(idx); });
+    (it.cat === "career" ? top : it.cat === "event" ? eventsRow : bottom).appendChild(b);
+    it.el = b;
+
+    var m = document.createElement("div");
+    m.className = "tl-mini-bar";
+    m.style.setProperty("--c", COLORS[it.cat]);
+    var mLane = it.cat === "career" ? it.lane : it.cat === "event" ? topCount + 0.5 : topCount + 1.6 + it.lane;
+    m.style.top = (0.25 + mLane * 0.15) + "rem";
+    m.style.left = pct(it.start, MIN, MAX) + "%";
+    m.style.width = Math.max(it.cat === "event" ? 0.35 : 0.6, pct(it.endEff, MIN, MAX) - pct(it.start, MIN, MAX)) + "%";
+    mini.insertBefore(m, win);
+    it.miniEl = m;
+  });
+  for (var y = 2010; y <= 2032; y += 2) {
+    var l = document.createElement("span");
+    l.className = "tl-mini-year" + (y % 4 ? " is-odd" : ""); l.textContent = y; l.style.left = pct(y, MIN, MAX) + "%";
+    mini.appendChild(l);
+  }
+
+  function pct(v, s, e) { return (v - s) / (e - s) * 100; }
+
+  function render() {
+    var s = view.s, e = view.e, span = e - s, vpW = vp.clientWidth;
+    ITEMS.forEach(function (it) {
+      var off = hidden[it.cat];
+      it.el.hidden = !!off; it.miniEl.style.display = off ? "none" : "";
+      if (off) return;
+      var outside = it.type === "point" ? (it.start < s - 0.01 || it.start > e) : (it.endEff <= s || it.start >= e);
+      it.el.style.visibility = outside ? "hidden" : "";
+      it.el.tabIndex = outside ? -1 : 0;
+      it.el.style.left = pct(it.start, s, e) + "%";
+      if (it.type !== "point") {
+        it.el.style.width = "calc(" + (pct(it.endEff, s, e) - pct(it.start, s, e)) + "% - 2px)";
+        // Keep the label readable when the bar starts before the visible period
+        var hiddenPx = it.start < s ? (s - it.start) / span * vpW : 0;
+        var totalPx = (it.endEff - it.start) / span * vpW;
+        it.el.style.paddingLeft = Math.min(hiddenPx + 7, Math.max(0, totalPx - 2)) + "px";
+      }
+    });
+    var pxYear = vpW / span;
+    var step = [1, 2, 5, 10].filter(function (k) { return k * pxYear >= 48; })[0] || 10;
+    var minor = pxYear >= 200;
+    vp.classList.toggle("is-compact", pxYear < 40);
+    var html = "", gridHtml = "";
+    for (var y = Math.ceil(s / (minor ? 0.25 : step)) * (minor ? 0.25 : step); y <= e; y += minor ? 0.25 : step) {
+      var yr = Math.round(y * 4) / 4, isYear = yr % 1 === 0;
+      if (!isYear && !minor) continue;
+      var left = pct(yr, s, e).toFixed(3);
+      html += '<span class="tl-tick' + (isYear ? "" : " is-minor") + '" style="left:' + left + '%">' + (isYear ? yr : "") + "</span>";
+      if (isYear) gridHtml += '<span class="tl-gridline" style="left:' + left + '%"></span>';
+    }
+    axis.innerHTML = html; grid.innerHTML = gridHtml;
+    todayEl.style.left = pct(TODAY, s, e) + "%";
+    todayEl.style.display = TODAY >= s && TODAY <= e ? "" : "none";
+    win.style.left = pct(s, MIN, MAX) + "%";
+    win.style.width = pct(e, MIN, MAX) - pct(s, MIN, MAX) + "%";
+    root.querySelectorAll("[data-range]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+  }
+
+  function clampView(s, e) {
+    var span = Math.max(MIN_SPAN, Math.min(MAX - MIN, e - s));
+    if (s < MIN) s = MIN;
+    if (s + span > MAX) s = MAX - span;
+    return { s: s, e: s + span };
+  }
+  function setView(s, e) { view = clampView(s, e); render(); }
+
+  var anim = null;
+  function animateTo(s, e) {
+    var target = clampView(s, e);
+    if (reduceMotion) { view = target; render(); return; }
+    var from = { s: view.s, e: view.e }, t0 = null;
+    cancelAnimationFrame(anim);
+    function step(t) {
+      if (t0 === null) t0 = t;
+      var k = Math.min(1, (t - t0) / 320), q = 1 - Math.pow(1 - k, 3);
+      view = { s: from.s + (target.s - from.s) * q, e: from.e + (target.e - from.e) * q };
+      render();
+      if (k < 1) anim = requestAnimationFrame(step);
+    }
+    anim = requestAnimationFrame(step);
+  }
+  function zoom(f, center) {
+    var c = center === undefined ? (view.s + view.e) / 2 : center;
+    animateTo(c - (c - view.s) * f, c + (view.e - c) * f);
+  }
+  function pan(frac) { var d = (view.e - view.s) * frac; animateTo(view.s + d, view.e + d); }
+
+  function select(idx) {
+    var it = ITEMS[idx];
+    ITEMS.forEach(function (o) { o.el.classList.toggle("is-selected", o === it); });
+    detail.style.setProperty("--c", COLORS[it.cat]);
+    var org = it.url ? '<a href="' + it.url + '" target="_blank" rel="noopener">' + it.org + "</a>" : it.org;
+    detail.innerHTML = '<span class="tl-when">' + it.when + (it.planned ? " (upcoming)" : "") + "</span><h5>" + it.title + '</h5><div class="tl-org">' + org + "</div>" + (it.text ? "<p>" + it.text + "</p>" : "");
+  }
+
+  // Toolbar
+  root.querySelectorAll("[data-cat]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") === "true";
+      b.setAttribute("aria-pressed", on ? "false" : "true");
+      hidden[b.dataset.cat] = on; render();
+    });
+  });
+  root.querySelectorAll("[data-range]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var r = b.dataset.range;
+      if (r === "all") animateTo(MIN, MAX);
+      else if (r === "now") animateTo(TODAY - 4, TODAY + 2);
+      else { var p = r.split(","); animateTo(+p[0], +p[1]); }
+      setTimeout(function () { b.setAttribute("aria-pressed", "true"); }, reduceMotion ? 0 : 340);
+    });
+  });
+  root.querySelector('[data-act="in"]').addEventListener("click", function () { zoom(0.6); });
+  root.querySelector('[data-act="out"]').addEventListener("click", function () { zoom(1 / 0.6); });
+  root.querySelector('[data-act="left"]').addEventListener("click", function () { pan(-0.35); });
+  root.querySelector('[data-act="right"]').addEventListener("click", function () { pan(0.35); });
+
+  // Drag and pinch on the main view
+  var pointers = {}, startView = null, startX = 0, startDist = 0, startCenter = 0, moved = false;
+  function yearAt(clientX) { var r = vp.getBoundingClientRect(); return view.s + (clientX - r.left) / r.width * (view.e - view.s); }
+  vp.addEventListener("pointerdown", function (ev) {
+    pointers[ev.pointerId] = ev.clientX;
+    var ids = Object.keys(pointers);
+    startView = { s: view.s, e: view.e }; moved = false;
+    if (ids.length === 1) startX = ev.clientX;
+    if (ids.length === 2) {
+      var a = pointers[ids[0]], c = pointers[ids[1]];
+      startDist = Math.abs(a - c) || 1; startCenter = yearAt((a + c) / 2);
+      ids.forEach(function (id) { try { vp.setPointerCapture(+id); } catch (e) {} });
+    }
+  });
+  vp.addEventListener("pointermove", function (ev) {
+    if (!(ev.pointerId in pointers)) return;
+    pointers[ev.pointerId] = ev.clientX;
+    var ids = Object.keys(pointers), w = vp.getBoundingClientRect().width, span = startView.e - startView.s;
+    if (ids.length === 1) {
+      var dx = ev.clientX - startX;
+      if (!moved && Math.abs(dx) > 5) { moved = true; vp.classList.add("is-dragging"); try { vp.setPointerCapture(ev.pointerId); } catch (e) {} }
+      if (moved) { var d = -dx / w * span; setView(startView.s + d, startView.e + d); }
+    } else if (ids.length === 2) {
+      moved = true;
+      var f = startDist / (Math.abs(pointers[ids[0]] - pointers[ids[1]]) || 1);
+      setView(startCenter - (startCenter - startView.s) * f, startCenter + (startView.e - startCenter) * f);
+    }
+  });
+  function endPointer(ev) {
+    delete pointers[ev.pointerId];
+    vp.classList.remove("is-dragging");
+    if (Object.keys(pointers).length === 1) { startView = { s: view.s, e: view.e }; startX = pointers[Object.keys(pointers)[0]]; }
+    setTimeout(function () { moved = false; }, 0);
+  }
+  vp.addEventListener("pointerup", endPointer);
+  vp.addEventListener("pointercancel", endPointer);
+  vp.addEventListener("wheel", function (ev) {
+    if (ev.ctrlKey) { ev.preventDefault(); var f = Math.exp(ev.deltaY * 0.01); setView(yearAt(ev.clientX) - (yearAt(ev.clientX) - view.s) * f, yearAt(ev.clientX) + (view.e - yearAt(ev.clientX)) * f); }
+    else if (Math.abs(ev.deltaX) > Math.abs(ev.deltaY)) { ev.preventDefault(); var d = ev.deltaX / vp.clientWidth * (view.e - view.s); setView(view.s + d, view.e + d); }
+  }, { passive: false });
+  vp.addEventListener("keydown", function (ev) {
+    if (ev.key === "ArrowLeft") { pan(-0.2); ev.preventDefault(); }
+    else if (ev.key === "ArrowRight") { pan(0.2); ev.preventDefault(); }
+    else if (ev.key === "+" || ev.key === "=") { zoom(0.6); ev.preventDefault(); }
+    else if (ev.key === "-") { zoom(1 / 0.6); ev.preventDefault(); }
+  });
+
+  // Overview: drag the frame, resize it from its edges, or click to centre
+  var miniDrag = null;
+  function miniYear(clientX) { var r = mini.getBoundingClientRect(); return MIN + (clientX - r.left) / r.width * (MAX - MIN); }
+  mini.addEventListener("pointerdown", function (ev) {
+    ev.preventDefault();
+    var mode = ev.target.classList.contains("is-left") ? "left" : ev.target.classList.contains("is-right") ? "right" : ev.target === win ? "move" : "jump";
+    if (mode === "jump") { var span = view.e - view.s, c = miniYear(ev.clientX); setView(c - span / 2, c + span / 2); mode = "move"; }
+    miniDrag = { mode: mode, y0: miniYear(ev.clientX), v: { s: view.s, e: view.e } };
+    mini.setPointerCapture(ev.pointerId);
+  });
+  mini.addEventListener("pointermove", function (ev) {
+    if (!miniDrag) return;
+    var d = miniYear(ev.clientX) - miniDrag.y0, v = miniDrag.v;
+    if (miniDrag.mode === "move") setView(v.s + d, v.e + d);
+    else if (miniDrag.mode === "left") setView(Math.min(v.s + d, v.e - MIN_SPAN), v.e);
+    else setView(v.s, Math.max(v.e + d, v.s + MIN_SPAN));
+  });
+  mini.addEventListener("pointerup", function () { miniDrag = null; });
+  mini.addEventListener("pointercancel", function () { miniDrag = null; });
+  mini.addEventListener("keydown", function (ev) {
+    if (ev.key === "ArrowLeft") { pan(-0.2); ev.preventDefault(); }
+    else if (ev.key === "ArrowRight") { pan(0.2); ev.preventDefault(); }
+  });
+
+  // Show or hide the whole timeline; the visitor's choice is remembered on this browser.
+  var toggle = root.querySelector(".tl-toggle"), body = root.querySelector("#tl-body");
+  function setOpen(open) {
+    body.hidden = !open;
+    root.classList.toggle("is-collapsed", !open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.textContent = open ? "Hide timeline" : "Show timeline";
+    if (open) render();
+  }
+  toggle.addEventListener("click", function () {
+    var open = body.hidden;
+    setOpen(open);
+    try { localStorage.setItem("timeline-open", open ? "1" : "0"); } catch (e) {}
+  });
+  var stored = null;
+  try { stored = localStorage.getItem("timeline-open"); } catch (e) {}
+  setOpen(stored !== "0");
+  window.addEventListener("resize", function () { if (!body.hidden) render(); });
+  root.querySelector('[data-range="all"]').setAttribute("aria-pressed", "true");
+})();
+</script>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Ecole-centrale-of-Lyon-Sept-2017---present-tab'
+                                data-bs-target='#pills-Ecole-centrale-of-Lyon-Sept-2017---present'
+                                aria-controls='Ecole-centrale-of-Lyon-Sept-2017---present' 
+                            >
+                                Ecole centrale of Lyon
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Hubert-Curien-Laboratory-Nov-2016---Aug-2017-tab'
+                                data-bs-target='#pills-Hubert-Curien-Laboratory-Nov-2016---Aug-2017' 
+                                aria-controls='Hubert-Curien-Laboratory-Nov-2016---Aug-2017'
+                            >
+                                Hubert Curien Laboratory
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Ecole-centrale-of-Lyon-Sept-2017---present'
+                            aria-labelledby='pills-Ecole-centrale-of-Lyon-Sept-2017---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Associate Professor</span>
+                                <small>-</small>
+                                <a href="https://www.ec-lyon.fr/" target="_blank">Ecole centrale of Lyon</a>
+                                <div class="pb-1">
+                                    <small>Sept 2017 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Associate&#32;Professor&#32;at&#32;Ecole&#32;centrale&#32;of&#32;Lyon
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://inl.cnrs.fr/ target="_blank">
+                                        Institute of nanotechnology of Lyon 
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <p>I am currently working as an associate professor at <a href="https://www.ec-lyon.fr/">Ecole centrale of Lyon</a> and at the <a href="https://inl.cnrs.fr/">Institute of nanotechnology of Lyon</a>.</p>
+<ul>
+<li>Research: I am part of the Electronic team of the laboratory and currently in charge of the working group on simulation and of the Reliable Ultra-low power Secure compuTing (RUST) group of the team. My research activities aim at evaluating the impact of emerging technologies on the hardware security of computing architectures.</li>
+<li>Teaching: I am part of the EEA teaching department of Ecole centrale of Lyon and involved in the 3 year of the enigneering formation and part of the EEA department council. I am in charge of 1 first year lecture, 2 second year module and 1 third year module.</li>
+</ul>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Hubert-Curien-Laboratory-Nov-2016---Aug-2017'
+                            aria-labelledby='pills-Hubert-Curien-Laboratory-Nov-2016---Aug-2017-tab'
+                        >
+                            <div>
+                                <span class="h4">PostDoc Researcher</span>
+                                <small>-</small>
+                                <a href="https://laboratoirehubertcurien.univ-st-etienne.fr/" target="_blank">Hubert Curien Laboratory</a>
+                                
+                                <div class="pb-1">
+                                    <small>Nov 2016 - Aug 2017</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=I&#32;worked&#32;as&#32;PostDoc&#32;researcher&#32;on&#32;the&#32;TEEVA&#32;project
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://laboratoirehubertcurien.univ-st-etienne.fr/en/teams/secure-embedded-systems-hardware-architectures.html target="_blank">
+                                        SESAM team 
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>I worked as PostDoc researcher in the  <a href="https://laboratoirehubertcurien.univ-st-etienne.fr/en/teams/secure-embedded-systems-hardware-architectures.html">SESAM team</a> of the Hubert Curien laboratory in Saint-Etienne. As a researcher, I was involved in the TEEVA project aiming at evaluating the security of the Arm Trustzone technology integrated inside System on Chip comprising both processors and FPGA. For this project I took part on the following tasks:</p>
+<ul>
+<li>Setting up the Arm Trustzone in SoC device such as Xilinx Zynq and Intel Cyclone V FPGA.</li>
+<li>Attacks on the system in form of modification of the communication protocol between the processor and the FPGA linked to the Trustzone integration.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2013 - 2016</small>
+                                </div>
+                                <h5 class="card-title">PhD in microelectronics</h5>
+                                
+                                
+                                <a href="https://laboratoirehubertcurien.univ-st-etienne.fr/" target="_blank">
+                                    <h6>
+                                    University of Lyon, Saint-Etienne, France
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>This PhD thesis has been carried out in the framework of the SALWARE project and had for main objective to fight against countergeiting and theft of integrated circuit.
+Three main area have been studied :</p>
+<ol>
+<li>The insertion of a watermark inside finite states machines and the possilibility to remotely verify the watermark using side channel analysis.</li>
+<li>The implementation and evaluation of an physical unclonable funtion (PUF) inside FPGAs</li>
+<li>The implementation of lightweight cryptographic algorithm on FPGA and ASIC.</li>
+</ol>
+<p>This last part has been partially carried out under the supervision of professor Kris Gaj from George Mason University in which I was invited for 3 month.</p>
+<p>This PhD has received the PhD excellence prize from &ldquo;Fondation Univesité Jean-Monnet&rdquo; of Saint-Etienne.</p>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2011 - 2013</small>
+                                </div>
+                                <h5 class="card-title">Engineering degree in microeletronics and application</h5>
+                                
+                                
+                                <a href="https://www.mines-stetienne.fr/formation/ismin/" target="_blank">
+                                    <h6>
+                                    Ecole des Mines de Saint-Etienne, Cycle ISMIN, Gardanne, France
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    This formation from &ldquo;Ecole des Mine de Saint-Etienne&rdquo; is specialized in embedded system and microelectronics.
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Research projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="CHALICE">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_FR30.svg" alt="CHALICE">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">France 2030</span>
+                            
+                            <span class="badge badge-secondary">AI architecture</span>
+                            
+                            <span class="badge badge-secondary">HW security</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">CHALICE</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            CHALICE (CHAssis and Logic Interconnect for Chiplet Extensibility) is the third targeted project of the France 2030 CAMELIA programme. It aims at designing a common chiplet integration platform providing the communication infrastructure, memory access, security, testability and reliability needed to scale AI accelerators to multi-chiplet systems, with both electrical and photonic network-on-chip explorations.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.cea.fr/Pages/agence-asic.aspx" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="PACMAN">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_ANR.svg" alt="PACMAN">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ANR</span>
+                            
+                            <span class="badge badge-secondary">Coordinator</span>
+                            
+                            <span class="badge badge-secondary">HW security</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">PACMAN</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The ANR project PACMAN aims at designing, evaluating and comparing post-quantum cryptography operations implemented with three emerging non-volatile memory technologies (ReRAM, MRAM and FeFET), considering both performance and resilience against hardware attacks.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="ECAT">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_ANR.svg" alt="ECAT">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ANR</span>
+                            
+                            <span class="badge badge-secondary">Computer architecture</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">ECAT</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The ANR-DFG project ECAT aims at providing an open-source full-stack ecosystem to explore the computer architectures of tomorrow, combining in-memory, near-memory and approximate computing paradigms with emerging technologies.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://anr.fr/Project-ANR-25-CE25-5922" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="MULTISPIN">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_FR30.svg" alt="MULTISPIN">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">PEPR</span>
+                            
+                            <span class="badge badge-secondary">Spintronics</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">MULTISPIN</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The PEPR SPIN project MULTISPIN aims at developing multiferroic tunnel junctions made of 2D van der Waals materials, from device fabrication to predictive models and circuit-level exploration for energy-frugal information processing.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.pepr-spin.fr/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="TAICHIP">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_Taichip.png" alt="TAICHIP">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Horizon Europe</span>
+                            
+                            <span class="badge badge-secondary">AI architecture</span>
+                            
+                            <span class="badge badge-secondary">Reliability</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">TAICHIP</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            TAICHIP is a Horizon Europe Twinning action led by TalTech (Estonia) that aims to boost scientific excellence and innovation capacity in the design of reliable and efficient AI chips, through joint research, networking and training activities with its advanced partners.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://taichip.taltech.ee/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Ferro4EdgeAI">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_Ferro4edge.png" alt="Ferro4EdgeAI">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Horizon Europe</span>
+                            
+                            <span class="badge badge-secondary">AI architecture</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Ferro4EdgeAI</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The european project Ferro4EdgeAI to design a very low-power, scalable peripheral accelerator for artificial intelligence, incorporating a neural network with augmented memory, based on a low-cost, high-density, multi-level ferroelectric (FE) technology integrated circuit.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://www.linkedin.com/company/ferro4edgeai/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.ferro4edgeai.eu/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="ECHOES">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_ANR.svg" alt="ECHOES">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ANR</span>
+                            
+                            <span class="badge badge-secondary">Hw security</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">ECHOES</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The objective of the ANR project ECHOES is to determine whether hafnia-based FE NVM can outperform current NVM solutions for edge-security applications.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="" target="_blank">
+                                <i class=""></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="FERROFUTURES">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/FerroFutures.png" alt="FERROFUTURES">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">PEPR</span>
+                            
+                            <span class="badge badge-secondary">AI architecture</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">FERROFUTURES</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The PEPR project FerroFutures aims at Highlighting the advantage of combining HZO-based FeRAM devices with a specialized unit for real-time, low-power consumption processing. This corresponds to the concept known as Compute-In-Place, which involves preprocessing data from various sensors to perform data fusion, filtering, or anomaly detection.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.pepr-electronique.fr/fer/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="HiLoDa Nets">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_ANR.svg" alt="HiLoDa Nets">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ANR</span>
+                            
+                            <span class="badge badge-secondary">Circuit synthesis</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">HiLoDa Nets</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The ANR project HiLoDa Nets objective is to combine high clock-speed data processing of each synthesized actor circuit in power-on mode and automatic state retention using FeFET technology in power-off mode, self-triggered during time intervals of either data unavailability or power shortage.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.cs12.tf.fau.eu/research/projects/hiloda-nets/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="NEUROPULS">
+                    <div class="card-head">
+                        <img class="card-img-top" src="images/projects/Logo_NEUROPULS.svg" alt="NEUROPULS">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Horizon Europe</span>
+                            
+                            <span class="badge badge-secondary">AI architecture</span>
+                            
+                            <span class="badge badge-secondary">Emerging technology</span>
+                            
+                            <span class="badge badge-secondary">Hw security</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">NEUROPULS</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The european project NEUROPULS aims at developping secure hardware accelerators based on novel neuromorphic architectures and PUF-based security layers leveraging the benefits offered by the integration of photonics, PCMs and III-V materials.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://www.linkedin.com/company/neuropuls/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://twitter.com/neuropuls?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aneuropuls%7Ctwcon%5Es2" target="_blank">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://neuropuls.eu/" target="_blank">
+                                URL
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Past Research project</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://fvllmonti.eu/" title="FVLLMONTI" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_FVLLMONTI.svg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">FVLLMONTI</h5>
+                            <div class="card-text secondary-font">
+                                2021-2025
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://inl.cnrs.fr/projects/phasepuf/overview.html" title="PHASEPUF" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_PHASEPUF.svg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">PHASEPUF</h5>
+                            <div class="card-text secondary-font">
+                                2021-2025
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://inl.cnrs.fr/projects/secret/" title="SECRET" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/secret.svg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">SECRET</h5>
+                            <div class="card-text secondary-font">
+                                2021-2025
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.lego.cnrs.fr/" title="LEGO" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_LEGO.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">LEGO</h5>
+                            <div class="card-text secondary-font">
+                                2018-2021
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="3eFerro">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_3eFerro.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">3eFerro</h5>
+                            <div class="card-text secondary-font">
+                                2018-2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section id="teaching" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Past Research project</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.lego.cnrs.fr/" title="LEGO" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_LEGO.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">LEGO</h5>
+                            <div class="card-text secondary-font">
+                                2018-2021
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="3eFerro">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="images/projects/Logo_3eFerro.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">3eFerro</h5>
+                            <div class="card-text secondary-font">
+                                2018-2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<section id="supervision" class="py-5 xs">
+    <div class="container">
+        <h3 class="text-center">Supervision</h3>
+        <p class="xs-intro">Five PhD theses I co-supervised have been defended. I currently supervise three PhD students, one of them as thesis director, and a postdoctoral researcher.</p>
+
+        <h4 class="xs-subtitle">Ongoing PhD theses</h4>
+        <div class="row g-4">
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">Since 2025</span>
+                <h5>Hans Kieninger</h5>
+                <p class="xs-title">Development of integrated photonic circuits for secure neuromorphic accelerators on an LNOI platform</p>
+                <p class="xs-meta">Co-supervised (50%) with Dr David Navarro and Prof. Arnan Mitchell. Joint PhD with RMIT University, Australia.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">Since 2024</span>
+                <h5>Basile Darne</h5>
+                <p class="xs-title">Automation of a synthesis flow including ferroelectric transistors for high-performance, ultra-low-power systems</p>
+                <p class="xs-meta">Thesis director (100%), within the ANR project HiLoDa Nets.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">Since 2024</span>
+                <h5>Miqueas Filsinger</h5>
+                <p class="xs-title">Design and evaluation of PUFs and TRNGs based on ferroelectric transistors</p>
+                <p class="xs-meta">Co-supervised (50%) with Dr David Navarro.</p>
+            </div></div>
+        </div>
+
+        <h4 class="xs-subtitle">Defended PhD theses</h4>
+        <div class="row g-4">
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2020 – 2025</span>
+                <h5>Alban Nicolas</h5>
+                <p class="xs-title">Integration and computing paradigm of memory-based operators within a processor architecture</p>
+                <p class="xs-meta">Co-supervised (50%) with Dr David Navarro.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2022 – 2025</span>
+                <h5>Paul Jimenez</h5>
+                <p class="xs-title">Enhanced security through photonics via physical unclonable functions</p>
+                <p class="xs-meta">Co-supervised (30%) with Dr Fabio Pavanello and Dr Xavier Letartre.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2021 – 2025</span>
+                <h5>Paul-Antoine Matrangolo</h5>
+                <p class="xs-title">Secure and reconfigurable processor including emerging technologies</p>
+                <p class="xs-meta">Co-supervised (50%) with Dr David Navarro.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2018 – 2023</span>
+                <h5>Mayeul Cantan</h5>
+                <p class="xs-title">Energy-efficient computing with integrated ferroelectrics for embedded and edge devices</p>
+                <p class="xs-meta">Co-supervised (30%) with Prof. Damien Deleruyelle and Prof. Ian O’Connor.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2018 – 2022</span>
+                <h5>Arnaud Poittevin</h5>
+                <p class="xs-title">Logic circuits with vertical-nanowire-based transistors: challenges and opportunities in physical and circuit design</p>
+                <p class="xs-meta">Co-supervised (30%) with Dr Sébastien Le Beux and Prof. Ian O’Connor.</p>
+            </div></div>
+        </div>
+
+        <h4 class="xs-subtitle">Postdoctoral researcher and internship</h4>
+        <div class="row g-4">
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">Since 2024</span>
+                <h5>Sergio Vinagrero Gutierrez</h5>
+                <p class="xs-title">Authentication protocols resistant to machine-learning attacks, based on photonic physical unclonable functions</p>
+                <p class="xs-meta">Postdoctoral researcher.</p>
+            </div></div>
+            <div class="col-lg-6"><div class="xs-card">
+                <span class="xs-when">2021</span>
+                <h5>Paul-Antoine Matrangolo</h5>
+                <p class="xs-title">Hardware emulation on FPGA of ferroelectric transistors</p>
+                <p class="xs-meta">Master’s internship (6 months).</p>
+            </div></div>
+        </div>
+    </div>
+</section>
+
+
+<section id="teaching" class="py-5 xs">
+    <div class="container">
+        <h3 class="text-center">Teaching</h3>
+        <p class="xs-intro">I teach electronics, computer architecture and hardware security across the three years of the engineering programme at École Centrale de Lyon, about 240 hours a year. I also supervise first-year study projects and second-year research projects.</p>
+
+        <div class="xs-card xs-table-card">
+            <div class="xs-table-wrap">
+                <table class="xs-table">
+                    <thead>
+                        <tr><th scope="col">Course</th><th scope="col">Year</th><th scope="col">Lectures</th><th scope="col">Tutorials</th><th scope="col">Labs</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><details><summary>Electronic systems</summary><p>Fundamentals of processor design, from transistors and amplifiers up to modern processor architectures. Taught twice a year.</p></details></td><td>1st year</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+                        <tr><td><details><summary>Analog/digital conversion for audio systems <span class="xs-badge">In charge</span></summary><p>First-year students simulate and build a sigma-delta modulator for analog-to-digital conversion.</p></details></td><td>1st year</td><td></td><td></td><td>&#10003;</td></tr>
+                        <tr><td><details><summary>Smart, communicating sensors and interface systems <span class="xs-badge">In charge</span> <span class="xs-note">until 2024</span></summary><p>Operating principles of sensors, signal conditioning, and their use in microcontroller-based architectures. Discontinued in 2024–2025 to rebalance the teaching load of the department.</p></details></td><td>2nd year</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+                        <tr><td><details><summary>Embedded architectures and industrial computing</summary><p>Processor architecture principles for embedded and industrial computing.</p></details></td><td>2nd year</td><td>&#10003;</td><td>&#10003;</td><td></td></tr>
+                        <tr><td><details><summary>ASIC design flow <span class="xs-badge">In charge</span> <span class="xs-note">since 2025</span></summary><p>A mixed analog/digital design project covering the whole electronic design chain: analog design on LTspice, then the digital ASIC flow from hardware description to placement and routing, using open-source tools only. Course created in 2025–2026.</p></details></td><td>2nd year</td><td colspan="3">Design project</td></tr>
+                        <tr><td><details><summary>Smart mechatronic systems</summary><p>Interactions between automation, mechanics and electronics in mechatronic systems. I teach the electronics part.</p></details></td><td>2nd year</td><td>&#10003;</td><td></td><td></td></tr>
+                        <tr><td><details><summary>Secure embedded systems <span class="xs-badge">In charge</span></summary><p>Hardware security for embedded systems: challenges, attacks and countermeasures. A course I created, with all lectures and lab sessions.</p></details></td><td>3rd year</td><td>&#10003;</td><td></td><td>&#10003;</td></tr>
+                        <tr><td><details><summary>IoT and concurrent embedded systems</summary><p>Standards, technologies and applications of the Internet of Things, with real-time and concurrent programming. I give the lecture on security.</p></details></td><td>3rd year</td><td>&#10003;</td><td></td><td></td></tr>
+                        <tr><td><details><summary>Intelligent land transport option</summary><p>Final-year embedded programming project: programming a self-balancing robot that detects obstacles.</p></details></td><td>3rd year</td><td></td><td></td><td>&#10003;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="xs-meta mt-2 mb-0">Select a course to read its description. 1st year of the engineering programme corresponds to the 3rd year of a bachelor’s degree, 2nd and 3rd years to a master’s degree.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="events" class="py-5 xs">
+    <div class="container">
+        <h3 class="text-center">Organised events</h3>
+        <p class="xs-intro">Special sessions in international conferences and national thematic days, mostly within the GDR SoC2 and the GDR Sécurité Informatique.</p>
+        <div class="xs-events">
+            <div class="xs-year">2025</div>
+            <ul>
+                <li><strong>Connected objects: security and forensics</strong><span>Thematic day, GDR SoC2 and GDR SI</span></li>
+            </ul>
+            <div class="xs-year">2023</div>
+            <ul>
+                <li><strong>Advances and challenges of ferroelectric devices for memory and computing</strong><span>Special session, IFIP/IEEE VLSI-SoC international conference</span></li>
+                <li><strong>Challenges of implementing AI: security, reliability, sustainability and new technologies</strong><span>X-GDR BarCamp</span></li>
+                <li><strong>High-performance computing for embedded systems</strong><span>Thematic day, GDR SoC2, at IRT Saint Exupéry</span></li>
+            </ul>
+            <div class="xs-year">2022</div>
+            <ul>
+                <li><strong>Hardware security and in-memory computing architectures</strong><span>Thematic day</span></li>
+            </ul>
+            <div class="xs-year">2021</div>
+            <ul>
+                <li><strong>Post-quantum cryptography algorithms and hardware security</strong><span>Thematic day</span></li>
+                <li><strong>Trusted Execution Environment (TEE) security days</strong><span>National event</span></li>
+                <li><strong>Emerging technologies and security applications</strong><span>Thematic day</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a 
+                            href='
+                                    mailto:cedric.marchand@ec-lyon.fr
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
+                            Mail me
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="./" title="Cédric Marchand">
+                    <img alt="Footer logo" src="kamon.png" height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2024  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
